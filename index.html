@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore — каталог смартфонов</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#">Tech<span>Store</span></a>
+      <nav class="menu">
+        <a href="#catalog">Каталог</a>
+        <a href="#cart">Корзина</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="catalog">
+      <h1 class="page-title">Каталог смартфонов</h1>
+      <p class="lead">Выберите устройство и добавьте его в корзину. Содержимое корзины
+        сохраняется в браузере и не пропадает после перезагрузки страницы.</p>
+
+      <!-- Карточки товаров формируются скриптом script.js -->
+      <div class="catalog" id="catalog-grid"></div>
+    </section>
+
+    <section id="cart" class="cart">
+      <div class="cart-head">
+        <h2>Корзина</h2>
+        <span class="cart-count" id="cart-count">0 товаров</span>
+      </div>
+
+      <ul class="cart-list" id="cart-list"></ul>
+
+      <div class="cart-footer">
+        <div class="cart-total">Итого: <strong id="cart-total">0</strong> ₽</div>
+        <div class="cart-actions">
+          <button class="btn btn-primary" id="checkout-btn">Оплатить</button>
+          <button class="btn btn-ghost" id="clear-btn">Очистить корзину</button>
+        </div>
+      </div>
+
+      <div class="toast" id="toast" hidden></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">TechStore · Практическая работа № 4 · Юрков С. Д., БИВТ-24-1</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
